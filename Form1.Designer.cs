@@ -31,21 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bukaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.simpanSebagaiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.keluarAplikasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grayscaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.averageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lightnessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.luminaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.brightnessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contrastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.pbOutput = new System.Windows.Forms.PictureBox();
             this.pbInput = new System.Windows.Forms.PictureBox();
-            this.bukaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.simpanSebagaiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOutput)).BeginInit();
@@ -75,6 +75,22 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
+            // 
+            // bukaToolStripMenuItem
+            // 
+            this.bukaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("bukaToolStripMenuItem.Image")));
+            this.bukaToolStripMenuItem.Name = "bukaToolStripMenuItem";
+            this.bukaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.bukaToolStripMenuItem.Text = "Buka";
+            this.bukaToolStripMenuItem.Click += new System.EventHandler(this.bukaToolStripMenuItem_Click);
+            // 
+            // simpanSebagaiToolStripMenuItem
+            // 
+            this.simpanSebagaiToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("simpanSebagaiToolStripMenuItem.Image")));
+            this.simpanSebagaiToolStripMenuItem.Name = "simpanSebagaiToolStripMenuItem";
+            this.simpanSebagaiToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.simpanSebagaiToolStripMenuItem.Text = "Simpan Sebagai...";
+            this.simpanSebagaiToolStripMenuItem.Click += new System.EventHandler(this.simpanSebagaiToolStripMenuItem_Click);
             // 
             // keluarAplikasiToolStripMenuItem
             // 
@@ -107,21 +123,49 @@
             // 
             // averageToolStripMenuItem
             // 
+            this.averageToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("averageToolStripMenuItem.Image")));
             this.averageToolStripMenuItem.Name = "averageToolStripMenuItem";
-            this.averageToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
+            this.averageToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.averageToolStripMenuItem.Text = "Average";
             // 
             // lightnessToolStripMenuItem
             // 
+            this.lightnessToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("lightnessToolStripMenuItem.Image")));
             this.lightnessToolStripMenuItem.Name = "lightnessToolStripMenuItem";
-            this.lightnessToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
+            this.lightnessToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.lightnessToolStripMenuItem.Text = "Lightness";
             // 
             // luminaceToolStripMenuItem
             // 
+            this.luminaceToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("luminaceToolStripMenuItem.Image")));
             this.luminaceToolStripMenuItem.Name = "luminaceToolStripMenuItem";
-            this.luminaceToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
-            this.luminaceToolStripMenuItem.Text = "Luminace";
+            this.luminaceToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.luminaceToolStripMenuItem.Text = "Luminance";
+            this.luminaceToolStripMenuItem.Click += new System.EventHandler(this.luminaceToolStripMenuItem_Click);
+            // 
+            // brightnessToolStripMenuItem
+            // 
+            this.brightnessToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.contrastToolStripMenuItem});
+            this.brightnessToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("brightnessToolStripMenuItem.Image")));
+            this.brightnessToolStripMenuItem.Name = "brightnessToolStripMenuItem";
+            this.brightnessToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.brightnessToolStripMenuItem.Text = "Brightness";
+            this.brightnessToolStripMenuItem.Click += new System.EventHandler(this.brightnessToolStripMenuItem_Click);
+            // 
+            // contrastToolStripMenuItem
+            // 
+            this.contrastToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("contrastToolStripMenuItem.Image")));
+            this.contrastToolStripMenuItem.Name = "contrastToolStripMenuItem";
+            this.contrastToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
+            this.contrastToolStripMenuItem.Text = "Contrast";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -139,30 +183,6 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(151, 20);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // brightnessToolStripMenuItem
-            // 
-            this.brightnessToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.contrastToolStripMenuItem});
-            this.brightnessToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("brightnessToolStripMenuItem.Image")));
-            this.brightnessToolStripMenuItem.Name = "brightnessToolStripMenuItem";
-            this.brightnessToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.brightnessToolStripMenuItem.Text = "Brightness";
-            this.brightnessToolStripMenuItem.Click += new System.EventHandler(this.brightnessToolStripMenuItem_Click);
-            // 
-            // contrastToolStripMenuItem
-            // 
-            this.contrastToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("contrastToolStripMenuItem.Image")));
-            this.contrastToolStripMenuItem.Name = "contrastToolStripMenuItem";
-            this.contrastToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.contrastToolStripMenuItem.Text = "Contrast";
             // 
             // pbOutput
             // 
@@ -184,20 +204,6 @@
             this.pbInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbInput.TabIndex = 0;
             this.pbInput.TabStop = false;
-            // 
-            // bukaToolStripMenuItem
-            // 
-            this.bukaToolStripMenuItem.Name = "bukaToolStripMenuItem";
-            this.bukaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.bukaToolStripMenuItem.Text = "Buka";
-            this.bukaToolStripMenuItem.Click += new System.EventHandler(this.bukaToolStripMenuItem_Click);
-            // 
-            // simpanSebagaiToolStripMenuItem
-            // 
-            this.simpanSebagaiToolStripMenuItem.Name = "simpanSebagaiToolStripMenuItem";
-            this.simpanSebagaiToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.simpanSebagaiToolStripMenuItem.Text = "Simpan Sebagai...";
-            this.simpanSebagaiToolStripMenuItem.Click += new System.EventHandler(this.simpanSebagaiToolStripMenuItem_Click);
             // 
             // Form1
             // 

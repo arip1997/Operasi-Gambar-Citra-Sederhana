@@ -77,5 +77,10 @@ namespace Operasi_Citra_Sederhana
         {
 
         }
+
+        private void luminaceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
