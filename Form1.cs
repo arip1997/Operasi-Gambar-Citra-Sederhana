@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,6 +51,10 @@ namespace Operasi_Citra_Sederhana
             if (DialogResult.OK == bukaFile.ShowDialog())
             {
                 this.pbInput.Image = new Bitmap(bukaFile.FileName);
+                string path = Path.GetFullPath(bukaFile.FileName);
+                string reso = ("Res. Citra: " + pbInput.Image.Width + "X" + pbInput.Image.Height);
+                this.toolStripStatusLabel1.Text = path;
+                this.toolStripStatusLabel2.Text = reso;
             }
         }
 
@@ -81,6 +86,56 @@ namespace Operasi_Citra_Sederhana
         }
 
         private void luminaceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripStatusLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void statusStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void contrastToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bitmap copy = new Bitmap((Bitmap)this.pbInput.Image);
+            olahCitra.keBrightness(copy);
+            this.pbOutput.Image = copy;
+        }
+
+        private void contrastToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Bitmap copy = new Bitmap((Bitmap)this.pbInput.Image);
+            olahCitra.keBrightness(copy);
+            this.pbOutput.Image = copy;
+        }
+
+        
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripStatusLabel1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToolStripStatusLabel2_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
