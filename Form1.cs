@@ -21,5 +21,15 @@ namespace Operasi_Citra_Sederhana
         {
 
         }
+
+        private void pbOutput_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpanSebagaiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
