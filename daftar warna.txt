@@ -1,0 +1,33 @@
+test warna di olahCitra.cs :
+hitam-ungu
+		    int r1 = c1.R + 150;
+                    int g1 = c1.G + 75;
+                    int b1 = c1.B + 255;
+hitam-merah
+		    int r1 = c1.R + 255;
+                    int g1 = c1.G + 0;
+                    int b1 = c1.B + 0;
+hitam-kuning
+		    int r1 = c1.R + 255;
+                    int g1 = c1.G + 255;
+                    int b1 = c1.B + 0;
+hitam-orange
+		    int r1 = c1.R + 255;
+                    int g1 = c1.G + 125;
+                    int b1 = c1.B + 0;
+hitam-cyan
+      		    int r1 = c1.R + 0;
+                    int g1 = c1.G + 255;
+                    int b1 = c1.B + 255;
+hitam-ungu
+		    int r1 = c1.R + 255;
+                    int g1 = c1.G + 0;
+                    int b1 = c1.B + 255;
+hitam-abu"
+		    int r1 = c1.R + 80;
+                    int g1 = c1.G + 80;
+                    int b1 = c1.B + 80;
+hitam-coklat
+		    int r1 = c1.R + 125;
+                    int g1 = c1.G + 60;
+                    int b1 = c1.B + 0;

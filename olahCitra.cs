@@ -16,9 +16,9 @@ namespace Operasi_Citra_Sederhana
                 for (int j = 0; j < b.Height; j++)
                 {
                     Color c1 = b.GetPixel(i, j);
-                    int r1 = c1.R + 150;
-                    int g1 = c1.G + 75;
-                    int b1 = c1.B + 255;
+                    int r1 = c1.R + 255;
+                    int g1 = c1.G + 0;
+                    int b1 = c1.B + 0;
                     b.SetPixel(i, j, Color.FromArgb(r1, g1, b1));
                 }
             }

@@ -31,5 +31,18 @@ namespace Operasi_Citra_Sederhana
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 f2 = new Form1();
+            f2.Show();
+            this.Hide();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
