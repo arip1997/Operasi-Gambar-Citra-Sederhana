@@ -71,8 +71,9 @@
             this.bukaToolStripMenuItem,
             this.simpanSebagaiToolStripMenuItem,
             this.keluarAplikasiToolStripMenuItem});
+            this.fileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fileToolStripMenuItem.Image")));
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
             this.fileToolStripMenuItem.Text = "File";
             this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
@@ -105,8 +106,9 @@
             this.colorsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.grayscaleToolStripMenuItem,
             this.brightnessToolStripMenuItem});
+            this.colorsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("colorsToolStripMenuItem.Image")));
             this.colorsToolStripMenuItem.Name = "colorsToolStripMenuItem";
-            this.colorsToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.colorsToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
             this.colorsToolStripMenuItem.Text = "Colors";
             // 
             // grayscaleToolStripMenuItem
@@ -157,13 +159,14 @@
             // 
             this.contrastToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("contrastToolStripMenuItem.Image")));
             this.contrastToolStripMenuItem.Name = "contrastToolStripMenuItem";
-            this.contrastToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
+            this.contrastToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.contrastToolStripMenuItem.Text = "Contrast";
             // 
             // aboutToolStripMenuItem
             // 
+            this.aboutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aboutToolStripMenuItem.Image")));
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
