@@ -29,6 +29,52 @@ namespace Operasi_Citra_Sederhana
 
         private void simpanSebagaiToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if(pbOutput.Image == null)
+        {
+                MessageBox.Show("Tidak Ada citra yang akan disimpan");
+            }
+            else
+            {
+                SaveFileDialog simpanFile = new SaveFileDialog();
+                simpanFile.Title = "Simpan File Citra";
+                simpanFile.Filter = "Image File (*.bmp, *.jpg, *.jpeg)|*.bmp;*.jpg;*.jpeg";
+                if (DialogResult.OK == simpanFile.ShowDialog())
+                    this.pbOutput.Image.Save(simpanFile.FileName);
+            }
+        }
+
+        private void bukaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog bukaFile = new OpenFileDialog();
+            bukaFile.Filter = "Image File (*.bmp, *.jpg, *.jpeg)|*.bmp;*.jpg;*.jpeg";
+            if (DialogResult.OK == bukaFile.ShowDialog())
+            {
+                this.pbInput.Image = new Bitmap(bukaFile.FileName);
+            }
+        }
+
+        private void keluarAplikasiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void grayscaleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void brightnessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
     }
