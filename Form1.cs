@@ -139,5 +139,10 @@ namespace Operasi_Citra_Sederhana
         {
 
         }
+
+        private void averageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

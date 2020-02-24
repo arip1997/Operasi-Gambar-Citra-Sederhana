@@ -19,7 +19,7 @@ hitam-cyan
       		    int r1 = c1.R + 0;
                     int g1 = c1.G + 255;
                     int b1 = c1.B + 255;
-hitam-ungu
+hitam-pink
 		    int r1 = c1.R + 255;
                     int g1 = c1.G + 0;
                     int b1 = c1.B + 255;

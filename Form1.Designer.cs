@@ -82,7 +82,7 @@
             // 
             this.bukaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("bukaToolStripMenuItem.Image")));
             this.bukaToolStripMenuItem.Name = "bukaToolStripMenuItem";
-            this.bukaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.bukaToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
             this.bukaToolStripMenuItem.Text = "Buka";
             this.bukaToolStripMenuItem.Click += new System.EventHandler(this.bukaToolStripMenuItem_Click);
             // 
@@ -120,7 +120,7 @@
             this.luminaceToolStripMenuItem});
             this.grayscaleToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("grayscaleToolStripMenuItem.Image")));
             this.grayscaleToolStripMenuItem.Name = "grayscaleToolStripMenuItem";
-            this.grayscaleToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.grayscaleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.grayscaleToolStripMenuItem.Text = "Grayscale";
             this.grayscaleToolStripMenuItem.Click += new System.EventHandler(this.grayscaleToolStripMenuItem_Click);
             // 
@@ -128,21 +128,22 @@
             // 
             this.averageToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("averageToolStripMenuItem.Image")));
             this.averageToolStripMenuItem.Name = "averageToolStripMenuItem";
-            this.averageToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.averageToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.averageToolStripMenuItem.Text = "Average";
+            this.averageToolStripMenuItem.Click += new System.EventHandler(this.averageToolStripMenuItem_Click);
             // 
             // lightnessToolStripMenuItem
             // 
             this.lightnessToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("lightnessToolStripMenuItem.Image")));
             this.lightnessToolStripMenuItem.Name = "lightnessToolStripMenuItem";
-            this.lightnessToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.lightnessToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.lightnessToolStripMenuItem.Text = "Lightness";
             // 
             // luminaceToolStripMenuItem
             // 
             this.luminaceToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("luminaceToolStripMenuItem.Image")));
             this.luminaceToolStripMenuItem.Name = "luminaceToolStripMenuItem";
-            this.luminaceToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.luminaceToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.luminaceToolStripMenuItem.Text = "Luminance";
             this.luminaceToolStripMenuItem.Click += new System.EventHandler(this.luminaceToolStripMenuItem_Click);
             // 
@@ -152,7 +153,7 @@
             this.contrastToolStripMenuItem});
             this.brightnessToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("brightnessToolStripMenuItem.Image")));
             this.brightnessToolStripMenuItem.Name = "brightnessToolStripMenuItem";
-            this.brightnessToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.brightnessToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.brightnessToolStripMenuItem.Text = "Brightness";
             this.brightnessToolStripMenuItem.Click += new System.EventHandler(this.brightnessToolStripMenuItem_Click);
             // 
