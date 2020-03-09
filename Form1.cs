@@ -75,7 +75,7 @@ namespace Operasi_Citra_Sederhana
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
+            About f2 = new About();
             f2.Show();
             this.Hide();
         }

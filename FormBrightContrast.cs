@@ -16,5 +16,10 @@ namespace Operasi_Citra_Sederhana
         {
             InitializeComponent();
         }
+
+        private void FormBrightContrast_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

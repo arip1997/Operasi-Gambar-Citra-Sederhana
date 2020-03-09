@@ -1,6 +1,6 @@
 ﻿namespace Operasi_Citra_Sederhana
 {
-    partial class Form2
+    partial class About
     {
         /// <summary>
         /// Required designer variable.
@@ -45,6 +45,7 @@
             this.label1.Size = new System.Drawing.Size(186, 68);
             this.label1.TabIndex = 0;
             this.label1.Text = "About";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label2
             // 
@@ -55,6 +56,7 @@
             this.label2.Size = new System.Drawing.Size(332, 33);
             this.label2.TabIndex = 1;
             this.label2.Text = "Aplikasi Masih Berkembang";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -64,6 +66,7 @@
             this.label3.Size = new System.Drawing.Size(59, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "v.1 beta";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
